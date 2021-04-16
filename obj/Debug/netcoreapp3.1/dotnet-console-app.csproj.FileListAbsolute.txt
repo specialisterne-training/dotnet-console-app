@@ -1,0 +1,13 @@
+C:\Specialisterne\dotnet-console-app\bin\Debug\netcoreapp3.1\dotnet-console-app.exe
+C:\Specialisterne\dotnet-console-app\bin\Debug\netcoreapp3.1\dotnet-console-app.deps.json
+C:\Specialisterne\dotnet-console-app\bin\Debug\netcoreapp3.1\dotnet-console-app.runtimeconfig.json
+C:\Specialisterne\dotnet-console-app\bin\Debug\netcoreapp3.1\dotnet-console-app.runtimeconfig.dev.json
+C:\Specialisterne\dotnet-console-app\bin\Debug\netcoreapp3.1\dotnet-console-app.dll
+C:\Specialisterne\dotnet-console-app\bin\Debug\netcoreapp3.1\dotnet-console-app.pdb
+C:\Specialisterne\dotnet-console-app\obj\Debug\netcoreapp3.1\dotnet-console-app.csprojAssemblyReference.cache
+C:\Specialisterne\dotnet-console-app\obj\Debug\netcoreapp3.1\dotnet-console-app.AssemblyInfoInputs.cache
+C:\Specialisterne\dotnet-console-app\obj\Debug\netcoreapp3.1\dotnet-console-app.AssemblyInfo.cs
+C:\Specialisterne\dotnet-console-app\obj\Debug\netcoreapp3.1\dotnet-console-app.csproj.CoreCompileInputs.cache
+C:\Specialisterne\dotnet-console-app\obj\Debug\netcoreapp3.1\dotnet-console-app.dll
+C:\Specialisterne\dotnet-console-app\obj\Debug\netcoreapp3.1\dotnet-console-app.pdb
+C:\Specialisterne\dotnet-console-app\obj\Debug\netcoreapp3.1\dotnet-console-app.genruntimeconfig.cache
