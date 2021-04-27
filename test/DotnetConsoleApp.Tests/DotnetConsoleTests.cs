@@ -33,7 +33,7 @@ namespace DotnetConsoleAppTest
         public void IsPrime_ReturnTrue()
         {
 
-            SlowDown(5000);
+            SlowDown(500);
 
             var primeService = new PrimeService();
             bool result = primeService.IsPrime(1);
@@ -50,7 +50,6 @@ namespace DotnetConsoleAppTest
             {
                 i++;
             }
-            Console.WriteLine("Done!!!");
 
         }
     }
