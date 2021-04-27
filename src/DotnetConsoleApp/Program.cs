@@ -18,13 +18,6 @@ namespace DotnetConsoleApp
                 System.Console.WriteLine(person.TalkToPerson());
             }
         }
-        public bool IsPrime(int candidate)
-        {
-            if (candidate == 1)
-            {
-                return false;
-            }
-            throw new NotImplementedException("Ikke helt implementeret.");
-        }    
+
     }
 }
