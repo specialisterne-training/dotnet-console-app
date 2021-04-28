@@ -23,7 +23,7 @@ namespace DotnetConsoleAppTest
         [Fact, Trait("Category", "FullTest")]
         public void PersonTalkToConsole_NotReturnHejSpecialist()
         {
-            string expected = "Hej Specialist!";
+            string expected = "Hej Specialist nr1!";
             string actual = new Person().TalkToPerson();
 
             Assert.Equal(expected, actual);
@@ -33,24 +33,11 @@ namespace DotnetConsoleAppTest
         public void IsPrime_ReturnTrue()
         {
 
-            SlowDown(500);
-
             var primeService = new PrimeService();
             bool result = primeService.IsPrime(1);
 
             Assert.False(result, "1 should not be prime");
         }
 
-        private static void SlowDown(int delay)
-        {
-            int i = 0;
-
-            Console.WriteLine("Starting!");
-            while (i < delay) 
-            {
-                i++;
-            }
-
-        }
     }
 }
