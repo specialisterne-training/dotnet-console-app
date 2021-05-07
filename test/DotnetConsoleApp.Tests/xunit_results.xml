@@ -1,0 +1,26 @@
+<test-run id="2" duration="0.0086017" testcasecount="3" total="3" passed="3" failed="0" inconclusive="0" skipped="0" result="Passed" start-time="2021-04-27T 13:18:07Z" end-time="2021-04-27T 13:18:08Z">
+  <test-suite type="Assembly" name="DotnetConsoleApp.Tests.dll" fullname="C:\Users\kenne\Development\specialisterne\dotnet-console-app\test\DotnetConsoleApp.Tests\bin\Debug\net5.0\DotnetConsoleApp.Tests.dll" total="3" passed="3" failed="0" inconclusive="0" skipped="0" result="Passed" start-time="2021-04-27T 13:18:08Z" end-time="2021-04-27T 13:18:08Z" duration="0.0086017">
+    <test-suite type="TestSuite" name="DotnetConsoleAppTest" fullname="DotnetConsoleAppTest" total="3" passed="3" failed="0" inconclusive="0" skipped="0" result="Passed" start-time="2021-04-27T 13:18:08Z" end-time="2021-04-27T 13:18:08Z" duration="0.0086017">
+      <test-suite type="TestFixture" name="PeopleSmokeTests" fullname="DotnetConsoleAppTest.PeopleSmokeTests" total="1" passed="1" failed="0" inconclusive="0" skipped="0" result="Passed" start-time="2021-04-27T 13:18:08Z" end-time="2021-04-27T 13:18:08Z" duration="0.0039771">
+        <test-case name="DotnetConsoleAppTest.PeopleSmokeTests.PersonTalkToConsole_ReturnHejSpecialist" fullname="DotnetConsoleAppTest.PeopleSmokeTests.PersonTalkToConsole_ReturnHejSpecialist" methodname="PersonTalkToConsole_ReturnHejSpecialist" classname="PeopleSmokeTests" result="Passed" start-time="2021-04-27T 13:18:08Z" end-time="2021-04-27T 13:18:08Z" duration="0.0039771" asserts="0">
+          <properties>
+            <property name="Category" value="SmokeTest" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" name="PeopleTests" fullname="DotnetConsoleAppTest.PeopleTests" total="2" passed="2" failed="0" inconclusive="0" skipped="0" result="Passed" start-time="2021-04-27T 13:18:08Z" end-time="2021-04-27T 13:18:08Z" duration="0.0046246">
+        <test-case name="DotnetConsoleAppTest.PeopleTests.IsPrime_ReturnTrue" fullname="DotnetConsoleAppTest.PeopleTests.IsPrime_ReturnTrue" methodname="IsPrime_ReturnTrue" classname="PeopleTests" result="Passed" start-time="2021-04-27T 13:18:08Z" end-time="2021-04-27T 13:18:08Z" duration="0.0038871" asserts="0">
+          <properties>
+            <property name="Category" value="FullTest" />
+          </properties>
+        </test-case>
+        <test-case name="DotnetConsoleAppTest.PeopleTests.PersonTalkToConsole_NotReturnHejSpecialist" fullname="DotnetConsoleAppTest.PeopleTests.PersonTalkToConsole_NotReturnHejSpecialist" methodname="PersonTalkToConsole_NotReturnHejSpecialist" classname="PeopleTests" result="Passed" start-time="2021-04-27T 13:18:08Z" end-time="2021-04-27T 13:18:08Z" duration="0.0007375" asserts="0">
+          <properties>
+            <property name="Category" value="FullTest" />
+          </properties>
+        </test-case>
+      </test-suite>
+    </test-suite>
+    <errors />
+  </test-suite>
+</test-run>
