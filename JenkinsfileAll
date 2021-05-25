@@ -1,7 +1,5 @@
 #!/usr/bin/env groovy
 
-def brandNames = ['App1','App2']
-
 pipeline {
     agent any
 
@@ -22,14 +20,34 @@ pipeline {
             }
         }
 
-        assert( brandNames.each {
-                stage( it ) {
-                    sh "echo ${it}"
-                }
+        stage ('Build all apps') {
+            steps {
+                buildAllApps( 'build')
             }
-        )
+        }
 
     }
+
+}
+
+void buildAllApps(String operation) {
+
+    def brandNames = ['App1','App2']
+
+    brandNames.each { brand ->
+        String action = "${operation}:${brand}"
+
+        echo("---- ${action.toUpperCas()} ----")
+
+        String command = "echo ${action}"
+
+        script {
+            stage(brand) {
+                sh(command)
+            }
+        }
+    }
+
 }
 
     
