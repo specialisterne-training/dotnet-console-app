@@ -22,11 +22,12 @@ pipeline {
             }
         }
 
-        brandNames.each {
-            stage( it ) {
-                sh "echo ${it}"
+        assert( brandNames.each {
+                stage( it ) {
+                    sh "echo ${it}"
+                }
             }
-        }
+        )
 
     }
 }
