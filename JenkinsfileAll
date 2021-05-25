@@ -3,8 +3,6 @@
 pipeline {
     agent any
 
-    def brands = ['App1','App2']
-    
     stages {
         stage('Prepare all apps') {
             steps {
@@ -15,19 +13,20 @@ pipeline {
                 sh "dotnet run --project src/DotnetConsoleApp"
             }
 
+            post {
+                success {
+                    sh "dotnet test test/DotnetConsoleApp.Tests --filter Category=SmokeTest --logger html"
+                }
+            }
+
+            def brands = ['App1','App2']
+    
             brands.each(
                 stage( it ) {
                     sh "echo ${it}"
                 }
             )
 
-            post {
-                // If Maven was able to run the tests, even if some of the test
-                // failed, record the test results and archive the jar file.
-                success {
-                    sh "dotnet test test/DotnetConsoleApp.Tests --filter Category=SmokeTest --logger html"
-                }
-            }
         }
     }
 }
