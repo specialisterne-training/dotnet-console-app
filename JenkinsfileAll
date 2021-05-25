@@ -37,7 +37,7 @@ void buildAllApps(String operation) {
     brandNames.each { brand ->
         String action = "${operation}:${brand}"
 
-        echo("---- ${action.toUpperCas()} ----")
+        echo("---- ${action.toUpperCase()} ----")
 
         String command = "echo ${action}"
 
