@@ -19,8 +19,6 @@ pipeline {
                 }
             }
 
-            def brands = ['App1','App2']
-    
             brands.each(
                 stage( it ) {
                     sh "echo ${it}"
@@ -30,3 +28,6 @@ pipeline {
         }
     }
 }
+
+def brands = ['App1','App2']
+    
