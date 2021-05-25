@@ -1,5 +1,7 @@
 #!/usr/bin/env groovy
 
+def brandNames = ['App1','App2']
+
 pipeline {
     agent any
 
@@ -18,16 +20,15 @@ pipeline {
                     sh "dotnet test test/DotnetConsoleApp.Tests --filter Category=SmokeTest --logger html"
                 }
             }
-
-            brands.each(
-                stage( it ) {
-                    sh "echo ${it}"
-                }
-            )
-
         }
+
+        brandNames.each {
+            stage( it ) {
+                sh "echo ${it}"
+            }
+        }
+
     }
 }
 
-def brands = ['App1','App2']
     
