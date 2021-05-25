@@ -1,0 +1,31 @@
+pipeline {
+    agent any
+
+    def brands = ['App1','App2']
+    
+    stages {
+        stage('Prepare all apps') {
+            steps {
+                // Hente kode fra GitHub repository
+                git branch: 'main', url: 'https://github.com/specialisterne-training/dotnet-console-app.git'
+
+                // Run the project
+                sh "dotnet run --project src/DotnetConsoleApp"
+            }
+
+            brands.each(
+                stage( it ) {
+                    sh "echo ${it}"
+                }
+            )
+
+            post {
+                // If Maven was able to run the tests, even if some of the test
+                // failed, record the test results and archive the jar file.
+                success {
+                    sh "dotnet test test/DotnetConsoleApp.Tests --filter Category=SmokeTest --logger html"
+                }
+            }
+        }
+    }
+}
