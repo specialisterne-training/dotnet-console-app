@@ -8,7 +8,10 @@ trigger:
 - main
 
 pool:
-  vmImage: 'windows-latest'
+  vmImage: 'ubuntu-latest'
+
+variables:
+  buildConfiguration: 'Release'
 
 steps:
 - task: UseDotNet@2
@@ -22,4 +25,6 @@ steps:
   inputs:
     command: 'restore'
     feedsToUse: 'select'
-    
+
+- script: dotnet build --project src/DotnetConsoleApp --configuration: $(buildConfiguration)
+  displayname: 'dotnet build $(buildConfiguration)'
