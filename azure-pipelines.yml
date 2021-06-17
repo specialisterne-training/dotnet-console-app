@@ -25,5 +25,5 @@ steps:
     command: 'restore'
     feedsToUse: 'select'
 
-- script: dotnet build --project src/DotnetConsoleApp --configuration $(buildConfiguration)
+- script: dotnet build --project src/DotnetConsoleApp/DotnetConsoleApp.csproj --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
