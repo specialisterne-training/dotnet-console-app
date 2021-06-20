@@ -22,9 +22,13 @@ steps:
 
 - task: DotNetCoreCLI@2
   inputs:
-    command: 'restore .\src\DotnetConsoleApp\DotnetConsoleApp.csproj'
+    command: restore
+    projects: 
+      src/DotnetConsoleApp/DotnetConsoleApp.csproj
+
 
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-    projects: .\src\DotnetConsoleApp\
+    projects: 
+      src/DotnetConsoleApp/DotnetConsoleApp.csproj
