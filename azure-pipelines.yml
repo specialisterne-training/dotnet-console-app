@@ -22,7 +22,7 @@ steps:
 
 - task: DotNetCoreCLI@2
   inputs:
-    command: restore .\src\DotnetConsoleApp\
+    command: 'dotnet restore .\src\DotnetConsoleApp\DotnetConsoleApp.csproj'
 
 - task: DotNetCoreCLI@2
   inputs:
